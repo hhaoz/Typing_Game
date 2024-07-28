@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Typing Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>TypeMaster 48</h1>
+        </div>
+
+        <div id="random-word">
+            <p>Word:&nbsp;</p>
+            <p id="word"></p>
+        </div>
+
+        <div class="input">
+            <input type="text" id="input" placeholder="Start typing...">
+            <span class="material-symbols-outlined" id="refresh">
+                refresh
+            </span>
+            <button class="start-btn">Start</button>
+        </div>
+
+        <div class="result">
+            <p>Timer: <span id="timer"></span></p>
+            <p>Score: <span id="score"></span></p>
+        </div>
+
+        <div id="keyboard-container">
+            <div class="key-row">
+                <div class="key tab" data-key="9">TAB</div>
+                <div class="key" data-key="81">Q</div>
+                <div class="key" data-key="87">W</div>
+                <div class="key" data-key="69">E</div>
+                <div class="key" data-key="82">R</div>
+                <div class="key" data-key="84">T</div>
+                <div class="key" data-key="89">Y</div>
+                <div class="key" data-key="85">U</div>
+                <div class="key" data-key="73">I</div>
+                <div class="key" data-key="79">O</div>
+                <div class="key" data-key="80">P</div>
+                <div class="key" data-key="219">[</div>
+                <div class="key" data-key="221">]</div>
+                <div class="key" data-key="220">\</div>
+
+            </div>
+            <div class="key-row">
+                <div class="key caps" data-key="20">CAPS</div>
+                <div class="key" data-key="65">A</div>
+                <div class="key" data-key="83">S</div>
+                <div class="key" data-key="68">D</div>
+                <div class="key" data-key="70">F</div>
+                <div class="key" data-key="71">G</div>
+                <div class="key" data-key="72">H</div>
+                <div class="key" data-key="74">J</div>
+                <div class="key" data-key="75">K</div>
+                <div class="key" data-key="76">L</div>
+                <div class="key" data-key="186">;</div>
+                <div class="key" data-key="222">'</div>
+                <div class="key enter" data-key="13">ENTER</div>
+            </div>
+            <div class="key-row">
+                <div class="key shift" data-key="16">SHIFT</div>
+                <div class="key" data-key="90">Z</div>
+                <div class="key" data-key="88">X</div>
+                <div class="key" data-key="67">C</div>
+                <div class="key" data-key="86">V</div>
+                <div class="key" data-key="66">B</div>
+                <div class="key" data-key="78">N</div>
+                <div class="key" data-key="77">M</div>
+                <div class="key" data-key="188">,</div>
+                <div class="key" data-key="190">.</div>
+                <div class="key" data-key="191">/</div>
+                <div class="key shift" data-key="16">SHIFT</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
